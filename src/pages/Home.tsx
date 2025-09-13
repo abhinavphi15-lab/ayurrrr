@@ -17,23 +17,23 @@ const Home = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-32 px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-16 pb-32 px-4 sm:px-6 lg:px-8 leaf-decoration">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-fade-in-up">
               <div className="space-y-4">
-                <div className="inline-flex items-center space-x-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+                <div className="inline-flex items-center space-x-2 bg-ayur-sage/20 text-ayur-primary px-4 py-2 rounded-full text-sm font-medium">
                   <Leaf className="w-4 h-4" />
                   <span>India's First Ayurvedic Nutrition Platform</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-ayur-primary leading-tight font-serif">
                   Ayurveda + Nutrition,{' '}
-                  <span className="bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
+                  <span className="bg-nature-gradient bg-clip-text text-transparent">
                     Digitally Simplified
                   </span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-ayur-secondary leading-relaxed">
                   Transform your practice with AI-powered Ayurvedic nutrition planning. 
                   Complete patient management, dosha analysis, and personalized diet charts 
                   backed by ancient wisdom and modern technology.
@@ -44,14 +44,14 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link 
                   to="/dietician/signup" 
-                  className="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-4 rounded-xl font-medium text-lg hover:from-green-700 hover:to-teal-700 transition-all transform hover:scale-105 shadow-xl"
+                  className="btn-ayur-primary flex items-center justify-center space-x-2 px-8 py-4 text-lg shadow-nature-lg"
                 >
                   <UserCheck className="w-5 h-5" />
                   <span>Get Started (Dieticians)</span>
                 </Link>
                 <Link 
                   to="/patient/signup" 
-                  className="flex items-center justify-center space-x-2 bg-white border-2 border-green-600 text-green-600 px-8 py-4 rounded-xl font-medium text-lg hover:bg-green-50 transition-all transform hover:scale-105 shadow-xl"
+                  className="btn-ayur-secondary flex items-center justify-center space-x-2 px-8 py-4 text-lg shadow-nature-lg"
                 >
                   <Download className="w-5 h-5" />
                   <span>Download App (Patients)</span>
@@ -61,71 +61,71 @@ const Home = () => {
               {/* Trust Indicators */}
               <div className="flex items-center space-x-8 pt-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">500+</div>
-                  <div className="text-sm text-gray-600">Foods Digitized</div>
+                  <div className="text-2xl font-bold text-ayur-primary">500+</div>
+                  <div className="text-sm text-ayur-secondary">Foods Digitized</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">1000+</div>
-                  <div className="text-sm text-gray-600">Patients Managed</div>
+                  <div className="text-2xl font-bold text-ayur-primary">1000+</div>
+                  <div className="text-sm text-ayur-secondary">Patients Managed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600">95%</div>
-                  <div className="text-sm text-gray-600">Dosha Accuracy</div>
+                  <div className="text-2xl font-bold text-ayur-primary">95%</div>
+                  <div className="text-sm text-ayur-secondary">Dosha Accuracy</div>
                 </div>
               </div>
             </div>
 
             {/* Right Content - Dashboard Mockup */}
-            <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+            <div className="relative animate-scale-in">
+              <div className="ayur-card nature-shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <div className="space-y-6">
                   {/* Header */}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-nature-gradient rounded-full flex items-center justify-center animate-leaf-float">
                         <Leaf className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900">AyurDiet Dashboard</h3>
-                        <p className="text-sm text-gray-500">Dietician Portal</p>
+                        <h3 className="font-semibold text-ayur-primary font-serif">AyurDiet Dashboard</h3>
+                        <p className="text-sm text-ayur-sage">Dietician Portal</p>
                       </div>
                     </div>
                     <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                      <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-ayur-terracotta rounded-full"></div>
+                      <div className="w-3 h-3 bg-ayur-gold rounded-full"></div>
+                      <div className="w-3 h-3 bg-ayur-sage rounded-full"></div>
                     </div>
                   </div>
 
                   {/* Stats Cards */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-green-50 p-4 rounded-lg">
+                    <div className="bg-ayur-sage/10 p-4 rounded-lg border border-ayur-sage/20">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-sm text-gray-600">Active Patients</p>
-                          <p className="text-2xl font-bold text-green-600">24</p>
+                          <p className="text-sm text-ayur-secondary">Active Patients</p>
+                          <p className="text-2xl font-bold text-ayur-primary">24</p>
                         </div>
-                        <Users className="w-8 h-8 text-green-500" />
+                        <Users className="w-8 h-8 text-ayur-sage" />
                       </div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg">
+                    <div className="bg-ayur-accent/10 p-4 rounded-lg border border-ayur-accent/20">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-sm text-gray-600">Compliance</p>
-                          <p className="text-2xl font-bold text-blue-600">89%</p>
+                          <p className="text-sm text-ayur-secondary">Compliance</p>
+                          <p className="text-2xl font-bold text-ayur-accent">89%</p>
                         </div>
-                        <TrendingUp className="w-8 h-8 text-blue-500" />
+                        <TrendingUp className="w-8 h-8 text-ayur-accent" />
                       </div>
                     </div>
                   </div>
 
                   {/* AI Insight */}
-                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-100">
+                  <div className="bg-gradient-to-r from-ayur-gold/10 to-ayur-terracotta/10 p-4 rounded-lg border border-ayur-gold/20">
                     <div className="flex items-start space-x-3">
-                      <Brain className="w-5 h-5 text-purple-500 mt-1" />
+                      <Brain className="w-5 h-5 text-ayur-gold mt-1" />
                       <div>
-                        <p className="text-sm font-medium text-gray-900">AI Insight</p>
-                        <p className="text-sm text-gray-600 mt-1">
+                        <p className="text-sm font-medium text-ayur-primary">AI Insight</p>
+                        <p className="text-sm text-ayur-secondary mt-1">
                           Patients with Vata imbalance show 23% better results with warm food recommendations.
                         </p>
                       </div>
@@ -134,15 +134,15 @@ const Home = () => {
 
                   {/* Recent Activity */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-medium text-gray-900">Recent Activity</h4>
+                    <h4 className="text-sm font-medium text-ayur-primary">Recent Activity</h4>
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-3 p-2 bg-gray-50 rounded-lg">
-                        <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span className="text-sm text-gray-700">Diet plan sent to Priya Sharma</span>
+                      <div className="flex items-center space-x-3 p-2 bg-ayur-cream/50 rounded-lg">
+                        <div className="w-2 h-2 bg-ayur-sage rounded-full"></div>
+                        <span className="text-sm text-ayur-secondary">Diet plan sent to Priya Sharma</span>
                       </div>
-                      <div className="flex items-center space-x-3 p-2 bg-gray-50 rounded-lg">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-gray-700">New patient consultation scheduled</span>
+                      <div className="flex items-center space-x-3 p-2 bg-ayur-cream/50 rounded-lg">
+                        <div className="w-2 h-2 bg-ayur-accent rounded-full"></div>
+                        <span className="text-sm text-ayur-secondary">New patient consultation scheduled</span>
                       </div>
                     </div>
                   </div>
@@ -154,13 +154,13 @@ const Home = () => {
       </section>
 
       {/* Features Preview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-ayur-cream/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-ayur-primary font-serif">
               Why Choose AyurDiet?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-ayur-secondary max-w-2xl mx-auto">
               Revolutionary features that bridge ancient Ayurvedic wisdom with cutting-edge technology
             </p>
           </div>
@@ -171,34 +171,34 @@ const Home = () => {
                 icon: Database,
                 title: "Ayurvedic Food Database",
                 description: "India's first digital database with 500+ foods mapped with dosha properties, rasa, virya, and vipaka",
-                color: "from-green-500 to-teal-500"
+                color: "bg-nature-gradient"
               },
               {
                 icon: Brain,
                 title: "AI Diet Personalization",
                 description: "Smart algorithms consider prakriti, lifestyle, symptoms, and seasonal variations for perfect meal plans",
-                color: "from-purple-500 to-pink-500"
+                color: "bg-earth-gradient"
               },
               {
                 icon: Shield,
                 title: "Validation Engine",
                 description: "Track diet compliance against symptom improvement with scientific validation and insights",
-                color: "from-blue-500 to-indigo-500"
+                color: "bg-sage-gradient"
               },
               {
                 icon: Heart,
                 title: "Holistic Care Team",
                 description: "Connect with dieticians, yoga trainers, fitness coaches, and homeopathy doctors in one platform",
-                color: "from-orange-500 to-red-500"
+                color: "bg-gradient-to-br from-ayur-gold to-ayur-terracotta"
               }
             ].map((feature, index) => (
-              <div key={index} className="group">
-                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                  <div className={`w-14 h-14 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+              <div key={index} className="group animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="ayur-card nature-shadow-lg">
+                  <div className={`w-14 h-14 ${feature.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-leaf-float`}>
                     <feature.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-ayur-primary mb-3 font-serif">{feature.title}</h3>
+                  <p className="text-ayur-secondary leading-relaxed">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -210,10 +210,10 @@ const Home = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-ayur-primary font-serif">
               Trusted by Healthcare Professionals
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-ayur-secondary">
               See what dieticians and patients are saying about AyurDiet
             </p>
           </div>
@@ -239,28 +239,28 @@ const Home = () => {
                 type: "Patient"
               }
             ].map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div key={index} className="ayur-card nature-shadow-lg animate-fade-in-up" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 text-ayur-gold fill-current" />
                   ))}
                 </div>
-                <blockquote className="text-gray-700 mb-6 leading-relaxed">
+                <blockquote className="text-ayur-secondary mb-6 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-nature-gradient rounded-full flex items-center justify-center">
                     <span className="text-white font-semibold text-lg">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.title}</p>
+                    <p className="font-semibold text-ayur-primary">{testimonial.name}</p>
+                    <p className="text-sm text-ayur-secondary">{testimonial.title}</p>
                     <div className={`inline-block px-2 py-1 text-xs rounded-full mt-1 ${
                       testimonial.type === 'Dietician' 
-                        ? 'bg-green-100 text-green-700' 
-                        : 'bg-blue-100 text-blue-700'
+                        ? 'bg-ayur-sage/20 text-ayur-primary' 
+                        : 'bg-ayur-accent/20 text-ayur-accent'
                     }`}>
                       {testimonial.type}
                     </div>
@@ -273,26 +273,26 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-teal-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-nature-gradient">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-serif">
             Ready to Transform Your Practice?
           </h2>
-          <p className="text-xl text-green-100 leading-relaxed">
+          <p className="text-xl text-white/80 leading-relaxed">
             Join hundreds of Ayurvedic practitioners who are already using AyurDiet to provide 
             better patient care and grow their practice.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link 
               to="/dietician/signup" 
-              className="inline-flex items-center space-x-2 bg-white text-green-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-all transform hover:scale-105 shadow-xl"
+              className="inline-flex items-center space-x-2 bg-white text-ayur-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-ayur-cream transition-all transform hover:scale-105 shadow-nature-xl"
             >
               <UserCheck className="w-5 h-5" />
               <span>Start Free Trial</span>
             </Link>
             <Link 
               to="/features" 
-              className="inline-flex items-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all"
+              className="inline-flex items-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all transform hover:scale-105"
             >
               <span>Learn More</span>
               <ArrowRight className="w-5 h-5" />
